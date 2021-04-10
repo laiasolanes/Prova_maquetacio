@@ -111,47 +111,97 @@
             <h4><span>Choose</span> Your Course</h4>
             <form>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="inputName" aria-describedby="nameHelp" placeholder="Name">
-                    
+                    <input 
+                        type="text" 
+                        class="form-control"
+                        id="inputName" 
+                        aria-describedby="nameHelp" 
+                        placeholder="Name">
                 </div>
 
                 <div class="form-group row">
                     <div class="col-sm-6">
-                        <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Email">
+                        <input 
+                            type="email" 
+                            class="form-control" 
+                            id="inputEmail" aria-describedby="emailHelp" placeholder="Email">
                     </div>
                     <div class="col-sm-6">
-                        <input type="tel" class="form-control" id="inputPhone" aria-describedby="phoneHelp" placeholder="Phone" pattern="[0-9]{9}">
+                        <input 
+                            type="tel" 
+                            class="form-control" 
+                            id="inputPhone" aria-describedby="phoneHelp" placeholder="Phone" 
+                            pattern="[0-9]{9}">
+
                         <small>Format: 123456789</small>
                     </div>
                 </div>
 
                 <div class="form-group row">
                     <div class="col-sm-6">
-                        <select class="form-control" id="formControlSelect">
-                            <option value="">Choose Faculty</option>
-                            <option value="dog">Informàtica</option>
-                            <option value="cat">Història</option>
-                            <option value="hamster">Comunicació audiovisual</option>
-                            <option value="parrot">Periodisme</option>
-                            <option value="spider">Enginyeria</option>
-                            <option value="goldfish">Medicina</option>
+                        <select 
+                            class="form-control" 
+                            id="formControlSelect">
+                                <option value="">Choose Faculty</option>
+                                <option value="dog">Informàtica</option>
+                                <option value="cat">Història</option>
+                                <option value="hamster">Comunicació audiovisual</option>
+                                <option value="parrot">Periodisme</option>
+                                <option value="spider">Enginyeria</option>
+                                <option value="goldfish">Medicina</option>
                           </select>
                     </div>
                     <div class="col-sm-6">
-                        <input type="text" class="form-control" id="inputBirthDate" aria-describedby="phoneHelp" placeholder="Date of Birth" pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}">
+                        <input 
+                            type="text" 
+                            class="form-control" 
+                            id="inputBirthDate" 
+                            aria-describedby="phoneHelp" 
+                            placeholder="Date of Birth" 
+                            pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}">
                         <small>Format: 01/01/1979</small>
                         
                     </div>
                 </div>
                 
-                
-                <button type="submit" class="btn btn-primary">Submit Request</button>
-              </form>
+                <button 
+                    type="submit" 
+                    class="btn btn-primary">
+                    Submit Request
+                </button>
+            </form>
         </div>
 
     </section>
     
+    <!-- FOOTER -->
+    <footer class="fullwidth">
+        <div class="footer flex">
+            <div class="footer__item">
+                <i class="fas fa-smile"></i>
+                <p class="big__number">0</p>
+                <h5>HAPPY CLIENTS</h5>
+            </div>
     
+            <div class="footer__item">
+                <i class="fas fa-book"></i>
+                <p class="big__number">0</p>
+                <h5>YEARS OF EXPERIENCE</h5>
+            </div>
+    
+            <div class="footer__item">
+                <i class="fas fa-user-friends"></i>
+                <p class="big__number">0</p>
+                <h5>CASES COMPLETED</h5>
+            </div>
+    
+            <div class="footer__item">
+                <i class="fas fa-graduation-cap"></i>
+                <p class="big__number">0</p>
+                <h5>AWARDS WINNING</h5>
+            </div>
+        </div>
+    </footer>
 
 
     
