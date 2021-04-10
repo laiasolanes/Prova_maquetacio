@@ -1,3 +1,9 @@
+:root {
+    --orange: #f88147;
+    --white: #ffffff;
+    --lightSilver: #ededed;
+}
+
 body {
     margin: 0px;
     padding: 0px;
@@ -12,17 +18,16 @@ a {
 
 .fullwidth {
     width: 100%;
-    
 }
 
 .topbar--full {
     background: #1e3344;
-    border-top: 2px solid #f88147;
+    border-top: 2px solid var(--orange);
     .topbar {
         justify-content: space-between;
         max-width: 1920px;
         padding: 0px 30px;
-        color: #ffffff;
+        color: var(--white);
         margin: 0 auto;
        
             ul{
@@ -32,33 +37,104 @@ a {
                 align-items: center;
                 justify-content: center;
                 
-    
                 a {
-                    color: #ffffff;
+                    color: var(--white);
                     line-height: 1;
                     li {
-                        margin-right: 15px;    
+                        margin-right: 0px;    
                     }
                 }
     
                 a:hover {
-                    color: #ededed;
+                    color:var(--lightSilver);
+                }
+            }
+
+            .topbar__icons {
+                li {
+                    padding-left: 15px;
                 }
             }
     
             .topbar__menu {
                 a:nth-child(1) {
-                    border-right: 2px solid #ffffff;
+                    border-right: 2px solid var(--white);
+                    padding-right: 15px;
                 }
                 a:nth-child(2) {
-                    border-right: 2px solid #ffffff;
-                    padding-left: 15px;
-                }
+                    border-right: 2px solid var(--white);
+                    padding: 0 15px;
+                }  
                 a:nth-child(3) {
                     padding-left: 15px;
                 }
+               
             }
         
     }
 }
 
+.nav {
+    max-width: 1920px;
+    padding: 0px 30px;
+    margin: 0 auto;
+    justify-content: space-between;
+    background: green;
+
+    .logo {
+        padding: 10px 0;
+        img {
+            height: 90%;
+        }
+    }
+    
+    ul{
+        list-style: none;
+        height: 100%;
+        padding: 0px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        li {
+            padding: 5px 15px;
+           
+        }
+        .button:hover {
+            background: var(--orange);
+            color:var(--white);
+            transition: all 400ms;
+        }
+
+        .dropdown {
+            position: relative;
+            .dropdown__child {
+                position: absolute;
+                z-index: 1;
+                top: 34px;
+                left: 0px;
+                width: 100%;
+                background: var(--lightSilver);
+                color: #000000;
+                display: none;
+                
+                li{
+                    transition: all 400ms;
+                }
+
+                li:hover {
+                    background: #d4d4d4;
+                }
+            }
+            
+        }
+
+        .dropdown:hover .dropdown__child{
+            display: block;
+        }
+        .active {
+            background: var(--orange);
+            color:var(--white);
+        }
+    }
+}

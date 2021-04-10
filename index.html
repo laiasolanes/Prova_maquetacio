@@ -12,13 +12,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
+    <script type="text/javascript" src="js/script.js" defer></script>
 </head>
 <body>
     <!-- TOPBAR -->
     <div class="fullwidth topbar--full">
         <div class="flex topbar">
             <div>
-                <ul class="flex">
+                <ul class="flex topbar__icons">
                     <a href="https://ca-es.facebook.com/"><li><i class="fab fa-facebook-f"></i></li></a>
                     <a href="https://twitter.com/?lang=ca"><li><i class="fab fa-twitter"></i></li></a>
                     <a href="https://www.google.com/"><li><i class="fab fa-google-plus-g"></i></li></a>
@@ -35,6 +36,33 @@
             </div>
         </div>
     </div>
+
+    <!-- NAV -->
+    <nav class="flex nav">
+        <div class="logo">
+            <img src="imgs/Javajan-Logo-20anys.png" />
+        </div>
+        <div class="menu">
+            <ul class="flex">
+                <li class="button active dropdown">Home 
+                    <i class="fas fa-chevron-down"></i>
+                    <div class="dropdown__child">
+                        <ul>
+                            <li>First</li>
+                            <li>Second</li>
+                            <li>Third</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="button">Features</li>
+                <li class="button">Pages</li>
+                <li class="button">Courses</li>
+                <li class="button">Blog</li>
+                <li class="button">Shortcode</li>
+            </ul>
+        </div>
+
+    </nav>
 
     
 </body>
