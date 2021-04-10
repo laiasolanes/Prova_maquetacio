@@ -2,6 +2,7 @@
   --orange: #f88147;
   --white: #ffffff;
   --lightSilver: #ededed;
+  --greyText: #575757;
 }
 
 body {
@@ -17,6 +18,11 @@ a {
 h1 {
   font-size: 34px;
   font-weight: 800;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 600;
 }
 
 h5 {
@@ -222,5 +228,40 @@ h5 {
 .slider--full .slider .slider__text .button--outlined:hover {
   background: var(--white);
   color: var(--orange);
+}
+
+.boxes {
+  max-width: 1920px;
+  padding: 50px 30px;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.boxes .box {
+  width: 30%;
+  text-align: center;
+  color: var(--greyText);
+  background: #f9f9f9;
+  border: 1px solid var(--lightSilver);
+  padding: 30px;
+}
+
+.boxes .box img {
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .boxes {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .boxes .box {
+    width: 70%;
+    margin: 15px auto;
+  }
 }
 /*# sourceMappingURL=style.css.map */

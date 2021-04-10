@@ -2,6 +2,7 @@
     --orange: #f88147;
     --white: #ffffff;
     --lightSilver: #ededed;
+    --greyText: #575757;
 }
 
 body {
@@ -17,6 +18,11 @@ a {
 h1 {
     font-size: 34px;
     font-weight: 800;
+}
+
+h4{
+    font-size: 18px;
+    font-weight: 600;
 }
 
 h5{
@@ -152,11 +158,13 @@ h5{
 .slider--full{
     background-image: url(../imgs/female-student-holding-her-books.jpg);
     background-repeat: no-repeat;    
-   background-size: cover;
+    background-size: cover;
     background-position: center top;
+
     .slider__layer {
         background-image: linear-gradient(to right,rgba(3, 3, 3, 0.5), rgba(49, 48, 48,0));
     }
+
     .slider {
         max-width: 1920px;
         padding: 200px 30px;
@@ -170,7 +178,6 @@ h5{
                 color: var(--lightSilver)
             }
             .button {
-                
                 border-radius: 50px;
                 padding: 10px 20px;
                 color: var(--white);
@@ -182,6 +189,7 @@ h5{
                 border: none;
                 transition: all 400ms;
             }
+
             .button--fill:hover {
                 background: var(--white);  
                 color: var(--orange);
@@ -202,3 +210,37 @@ h5{
 
     }
 }
+
+.boxes {
+    max-width: 1920px;
+    padding: 50px 30px;
+    margin: 0 auto;
+    justify-content: space-between;
+
+    .box{
+        width: 30%;
+        text-align: center;
+        color: var(--greyText);
+        background: #f9f9f9;
+        border: 1px solid var(--lightSilver);
+        padding: 30px;
+        img {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+
+    .boxes {
+        flex-direction: column;
+        .box{
+            width: 70%;
+            margin: 15px auto;
+
+            
+        }
+    }
+
+  }
