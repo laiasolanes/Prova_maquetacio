@@ -1,3 +1,304 @@
-body{
-    background: red;
+:root {
+    --orange: #f88147;
+    --white: #ffffff;
+    --lightSilver: #ededed;
+    --greyText: #575757;
+    --backgroudSilver: #f9f9f9;
 }
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 34px;
+    font-weight: 800;
+}
+
+h4{
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+h5{
+    font-size: 14px;
+}
+
+.flex {
+    display: flex;
+}
+
+.fullwidth {
+    width: 100%;
+}
+
+.topbar--full {
+    background: #1e3344;
+    border-top: 2px solid var(--orange);
+    .topbar {
+        justify-content: space-between;
+        max-width: 1920px;
+        padding: 0px 30px;
+        color: var(--white);
+        margin: 0 auto;
+       
+            ul{
+                list-style: none;
+                height: 100%;
+                padding: 0px;
+                align-items: center;
+                justify-content: center;
+                
+                a {
+                    color: var(--white);
+                    line-height: 1;
+                    li {
+                        margin-right: 0px;    
+                    }
+                }
+    
+                a:hover {
+                    color:var(--lightSilver);
+                }
+            }
+
+            .topbar__icons {
+                li {
+                    padding-left: 15px;
+                }
+            }
+    
+            .topbar__menu {
+                a:nth-child(1) {
+                    border-right: 2px solid var(--white);
+                    padding-right: 15px;
+                }
+                a:nth-child(2) {
+                    border-right: 2px solid var(--white);
+                    padding: 0 15px;
+                }  
+                a:nth-child(3) {
+                    padding-left: 15px;
+                }
+               
+            }
+        
+    }
+}
+
+.nav {
+    max-width: 1920px;
+    padding: 0px 30px;
+    margin: 0 auto;
+    justify-content: space-between;
+    
+    .logo {
+        padding: 10px 0;
+        img {
+            height: 90%;
+        }
+    }
+    
+    ul{
+        list-style: none;
+        height: 100%;
+        padding: 0px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        li {
+            padding: 5px 15px;
+           
+        }
+        .button:hover {
+            background: var(--orange);
+            color:var(--white);
+            transition: all 400ms;
+        }
+
+        .dropdown {
+            position: relative;
+            .dropdown__child {
+                position: absolute;
+                z-index: 1;
+                top: 30px;
+                left: 0px;
+                width: 100%;
+                background: var(--lightSilver);
+                color: #000000;
+                display: none;
+                
+                li{
+                    transition: all 400ms;
+                }
+
+                li:hover {
+                    background: var(--white);
+                }
+            }
+            
+        }
+
+        .dropdown:hover .dropdown__child{
+            display: block;
+        }
+        .active {
+            background: var(--orange);
+            color:var(--white);
+        }
+    }
+}
+
+.slider--full{
+    background-image: url(../imgs/female-student-holding-her-books.jpg);
+    background-repeat: no-repeat;    
+    background-size: cover;
+    background-position: center top;
+
+    .slider__layer {
+        background-image: linear-gradient(to right,rgba(3, 3, 3, 0.5), rgba(49, 48, 48,0));
+    }
+
+    .slider {
+        max-width: 1920px;
+        padding: 200px 30px;
+        margin: auto;
+        
+        .slider__text {
+            color: var(--white);
+            width: 50%;
+
+            h5 {
+                color: var(--lightSilver)
+            }
+            .button {
+                border-radius: 50px;
+                padding: 10px 20px;
+                color: var(--white);
+                margin-right: 30px;
+            } 
+
+            .button--fill {
+                background: var(--orange);  
+                border: none;
+                transition: all 400ms;
+            }
+
+            .button--fill:hover {
+                background: var(--white);  
+                color: var(--orange);
+            }
+
+            .button--outlined {
+                background: transparent;  
+                color: var(--white);
+                border: 2px solid var(--white);
+                transition: all 400ms;
+            }
+
+            .button--outlined:hover {
+                background: var(--white);  
+                color: var(--orange);
+            }
+        }
+
+    }
+}
+
+.boxes {
+    max-width: 1920px;
+    padding: 50px 30px;
+    margin: 0 auto;
+    justify-content: space-between;
+
+    .box{
+        width: 30%;
+        text-align: center;
+        color: var(--greyText);
+        background: var(--backgroudSilver);
+        border: 1px solid var(--lightSilver);
+        padding: 30px;
+        img {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.form__row{
+    max-width: 1920px;
+    padding: 50px 30px;
+    margin: 0 auto;
+    justify-content: space-between;
+    .form__image {
+        width: 50%;
+        img {
+            width: 100%;
+        }
+    }
+
+    .form{
+        flex-direction: column;
+        align-content: space-between;
+        width: 50%;
+        background: var(--backgroudSilver);
+        border: 1px solid var(--lightSilver);
+        padding: 30px;
+        color: var(--greyText);
+         span {
+             color: var(--orange);
+         }
+
+        #inputName {
+            margin: 20px 0;
+        }
+
+        .btn {
+            width: 100%;
+            margin-top: 20px;
+            background: var(--orange);
+            border: none;
+        }
+        .btn:hover {
+            background: var(--greyText);
+           
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .boxes {
+        flex-direction: column;
+        .box{
+            width: 70%;
+            margin: 15px auto;
+
+        }
+    }
+
+    .form__row{
+        flex-direction: column;
+        .form__image{
+            width: 100%;
+            margin-bottom: 50px;
+        }
+        .form{
+            width: 100%;
+
+            .col-sm-6{
+                margin-bottom: 20px;
+            }
+           
+        }
+
+
+    }
+
+  }
