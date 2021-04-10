@@ -3,6 +3,7 @@
     --white: #ffffff;
     --lightSilver: #ededed;
     --greyText: #575757;
+    --backgroudSilver: #f9f9f9;
 }
 
 body {
@@ -23,6 +24,7 @@ h1 {
 h4{
     font-size: 18px;
     font-weight: 600;
+    letter-spacing: 1px;
 }
 
 h5{
@@ -221,7 +223,7 @@ h5{
         width: 30%;
         text-align: center;
         color: var(--greyText);
-        background: #f9f9f9;
+        background: var(--backgroudSilver);
         border: 1px solid var(--lightSilver);
         padding: 30px;
         img {
@@ -230,17 +232,73 @@ h5{
     }
 }
 
+.form__row{
+    max-width: 1920px;
+    padding: 50px 30px;
+    margin: 0 auto;
+    justify-content: space-between;
+    .form__image {
+        width: 50%;
+        img {
+            width: 100%;
+        }
+    }
+
+    .form{
+        flex-direction: column;
+        align-content: space-between;
+        width: 50%;
+        background: var(--backgroudSilver);
+        border: 1px solid var(--lightSilver);
+        padding: 30px;
+        color: var(--greyText);
+         span {
+             color: var(--orange);
+         }
+
+        #inputName {
+            margin: 20px 0;
+        }
+
+        .btn {
+            width: 100%;
+            margin-top: 20px;
+            background: var(--orange);
+            border: none;
+        }
+        .btn:hover {
+            background: var(--greyText);
+           
+        }
+    }
+}
+
 @media only screen and (max-width: 1000px) {
-
-
     .boxes {
         flex-direction: column;
         .box{
             width: 70%;
             margin: 15px auto;
 
-            
         }
+    }
+
+    .form__row{
+        flex-direction: column;
+        .form__image{
+            width: 100%;
+            margin-bottom: 50px;
+        }
+        .form{
+            width: 100%;
+
+            .col-sm-6{
+                margin-bottom: 20px;
+            }
+           
+        }
+
+
     }
 
   }

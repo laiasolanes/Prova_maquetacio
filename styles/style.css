@@ -3,6 +3,7 @@
   --white: #ffffff;
   --lightSilver: #ededed;
   --greyText: #575757;
+  --backgroudSilver: #f9f9f9;
 }
 
 body {
@@ -23,6 +24,7 @@ h1 {
 h4 {
   font-size: 18px;
   font-weight: 600;
+  letter-spacing: 1px;
 }
 
 h5 {
@@ -243,13 +245,63 @@ h5 {
   width: 30%;
   text-align: center;
   color: var(--greyText);
-  background: #f9f9f9;
+  background: var(--backgroudSilver);
   border: 1px solid var(--lightSilver);
   padding: 30px;
 }
 
 .boxes .box img {
   margin-bottom: 20px;
+}
+
+.form__row {
+  max-width: 1920px;
+  padding: 50px 30px;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form__row .form__image {
+  width: 50%;
+}
+
+.form__row .form__image img {
+  width: 100%;
+}
+
+.form__row .form {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  width: 50%;
+  background: var(--backgroudSilver);
+  border: 1px solid var(--lightSilver);
+  padding: 30px;
+  color: var(--greyText);
+}
+
+.form__row .form span {
+  color: var(--orange);
+}
+
+.form__row .form #inputName {
+  margin: 20px 0;
+}
+
+.form__row .form .btn {
+  width: 100%;
+  margin-top: 20px;
+  background: var(--orange);
+  border: none;
+}
+
+.form__row .form .btn:hover {
+  background: var(--greyText);
 }
 
 @media only screen and (max-width: 1000px) {
@@ -262,6 +314,22 @@ h5 {
   .boxes .box {
     width: 70%;
     margin: 15px auto;
+  }
+  .form__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form__row .form__image {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .form__row .form {
+    width: 100%;
+  }
+  .form__row .form .col-sm-6 {
+    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
