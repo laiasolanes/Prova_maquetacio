@@ -7,9 +7,20 @@
 body {
     margin: 0px;
     padding: 0px;
+    font-size: 14px;
 }
+
 a {
     text-decoration: none;
+}
+
+h1 {
+    font-size: 34px;
+    font-weight: 800;
+}
+
+h5{
+    font-size: 14px;
 }
 
 .flex {
@@ -79,8 +90,7 @@ a {
     padding: 0px 30px;
     margin: 0 auto;
     justify-content: space-between;
-    background: green;
-
+    
     .logo {
         padding: 10px 0;
         img {
@@ -111,7 +121,7 @@ a {
             .dropdown__child {
                 position: absolute;
                 z-index: 1;
-                top: 34px;
+                top: 30px;
                 left: 0px;
                 width: 100%;
                 background: var(--lightSilver);
@@ -123,7 +133,7 @@ a {
                 }
 
                 li:hover {
-                    background: #d4d4d4;
+                    background: var(--white);
                 }
             }
             
@@ -136,5 +146,59 @@ a {
             background: var(--orange);
             color:var(--white);
         }
+    }
+}
+
+.slider--full{
+    background-image: url(../imgs/female-student-holding-her-books.jpg);
+    background-repeat: no-repeat;    
+   background-size: cover;
+    background-position: center top;
+    .slider__layer {
+        background-image: linear-gradient(to right,rgba(3, 3, 3, 0.5), rgba(49, 48, 48,0));
+    }
+    .slider {
+        max-width: 1920px;
+        padding: 200px 30px;
+        margin: auto;
+        
+        .slider__text {
+            color: var(--white);
+            width: 50%;
+
+            h5 {
+                color: var(--lightSilver)
+            }
+            .button {
+                
+                border-radius: 50px;
+                padding: 10px 20px;
+                color: var(--white);
+                margin-right: 30px;
+            } 
+
+            .button--fill {
+                background: var(--orange);  
+                border: none;
+                transition: all 400ms;
+            }
+            .button--fill:hover {
+                background: var(--white);  
+                color: var(--orange);
+            }
+
+            .button--outlined {
+                background: transparent;  
+                color: var(--white);
+                border: 2px solid var(--white);
+                transition: all 400ms;
+            }
+
+            .button--outlined:hover {
+                background: var(--white);  
+                color: var(--orange);
+            }
+        }
+
     }
 }
