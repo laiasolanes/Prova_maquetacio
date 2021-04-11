@@ -4,15 +4,15 @@
 - CSS
 - JS
 
-🍭  HTML semàntic
+🍭  HTML semàntic.
 
-🍭  Metodologia BEM per a la nomenclatura de les classes de CSS
+🍭  Metodologia BEM per a la nomenclatura de les classes de CSS.
 
-🍭  Ús de variables CSS pels colors
+🍭  Ús de variables CSS pels colors.
 
 🍭  SASS
 
-🍭  Styles for desktop first and media rules for small devices
+🍭  Estils per desktop first i regles específiques per disposituis amb pantalles petites.
 
 
 
