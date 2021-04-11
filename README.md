@@ -12,7 +12,7 @@
 
 🍭  SASS
 
-🍭  Estils amb desktop first i regles específiques per disposituis amb pantalles petites.
+🍭  Estils per desktop first i regles específiques per disposituis amb pantalles petites.
 
 
 
