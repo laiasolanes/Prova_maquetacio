@@ -38,34 +38,47 @@
     </nav>
 
     <!-- NAV -->
-    <nav class="flex nav">
-        <div class="logo">
-            <img src="imgs/Javajan-Logo-20anys.png" />
-        </div>
-        <div class="menu">
-            <ul class="flex">
-                <li class="button active dropdown">Home 
-                    <i class="fas fa-chevron-down"></i>
-                    <div class="dropdown__child">
-                        <ul>
-                            <li>First</li>
-                            <li>Second</li>
-                            <li>Third</li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="button">Features</li>
-                <li class="button">Pages</li>
-                <li class="button">Courses</li>
-                <li class="button">Blog</li>
-                <li class="button">Shortcode</li>
-            </ul>
+    <nav class="sticky__nav">
+        <div class="flex nav">
+            <div class="logo">
+                <img src="imgs/Javajan-Logo-20anys.png" />
+            </div>
+            <div class="menu">
+                <ul class="flex">
+                    <a href="#home"><li class="button active dropdown">
+                        Home 
+                        <i class="fas fa-chevron-down"></i>
+                        <div class="dropdown__child">
+                            <ul>
+                                <li>First</li>
+                                <li>Second</li>
+                                <li>Third</li>
+                            </ul>
+                        </div>
+                    </li></a>
+                    <a href="#features"><li class="button">Features</li></a>
+                    <a href="#pages"><li class="button dropdown">
+                        Pages 
+                        <i class="fas fa-chevron-down"></i>
+                        <div class="dropdown__child">
+                            <ul>
+                                <li>First</li>
+                                <li>Second</li>
+                                <li>Third</li>
+                            </ul>
+                        </div>
+                    </li></a>
+                    <a href="#courses"><li class="button">Courses</li></a>
+                    <a href="#blog"><li class="button">Blog</li></a>
+                    <a href="#shortcode"><li class="button">Shortcode</li></a>
+                </ul>
+            </div>
         </div>
 
     </nav>
     
     <!-- SLIDER -->
-    <section class="fullwidth slider--full">
+    <section class="fullwidth slider--full" id="home">
         <div class="fullwidth slider__layer">
             <div class="slider">
                 <div class="slider__text">
@@ -81,29 +94,29 @@
         </div>
     </section>
 
-    <!-- BOXES -->
-    <section class="flex boxes">
-        <div class="box">
+    <!-- FEATRURES BOXES -->
+    <section class="flex features" id="features">
+        <div class="feature">
             <img src="imgs/icons8-student-male-64.png" alt="Estudiant">
             <h4>Online Course Facilities</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias distinctio.</p>
         </div>
 
-        <div class="box">
+        <div class="feature">
             <img src="imgs/icons8-book-64.png" alt="Estudiant">
             <h4>Modern Book Library</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias distinctio.</p>
         </div>
 
-        <div class="box">
+        <div class="feature">
             <img src="imgs/icons8-design-64.png" alt="Estudiant">
             <h4>Be Industrial Leader</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias distinctio.</p>
         </div>
     </section>
 
-    <!-- FORM -->
-    <section class="flex form__row">
+    <!-- FORM ROW -->
+    <section class="flex form__row" id="pages">
         <div class="form__image">
             <img src="imgs/young-people-in-row-with-thumbs-up.jpg" alt="Estudiants aixecant el polze">
         </div>
@@ -173,9 +186,172 @@
         </div>
 
     </section>
+
+    <!-- BLOG -->
+    <section class="fullwidth blog--full" id="blog">
+        <div class="blog">
+            <div class="flex">
+                <div class="blog__title">
+                    <h3>POPULAR <span>COURSES</span></h3>
+                    <h5>Choose your Desired couse</h5>
+                </div>
+                <div class="blog__arrows">
+                    <div class="cards__controls">
+                        <button class="cards__controls--prev">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="cards__controls--next">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                      </div>
+                </div>
+            </div>
+            
+
+            <div class="blog__slider">
+                <ul class="cards__wrapper">
+                    
+                    <li class="cards__item">
+                        <img src="imgs/brooke-cagle--uHVRvDr7pg-unsplash.jpg" alt="Estudiants">
+                        <a href="#">
+                            <p class="card__title">Nural Networking course</p>
+                            <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet expedita ullam esse.</p>
+                        </a>
+                    </li>
+                    <li class="cards__item">
+                        <img src="imgs/free-time-of-students-bachelor-s-campus-life-rhythm-five-friendly-students-are-walking.jpg" alt="Estudiants">
+                        <a href="#">
+                            <p class="card__title">Nural Networking course</p>
+                            <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet expedita ullam esse.</p>
+                        </a>
+                    </li>
+                    <li class="cards__item">
+                        <img src="imgs/haneen-krimly-_D1DKks6wgs-unsplash.jpg" alt="Estudiants">
+                        <a href="#">
+                            <p class="card__title">Nural Networking course</p>
+                            <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet expedita ullam esse.</p>
+                        </a>
+                    </li>
+                    <li class="cards__item">
+                        <img src="imgs/john-schnobrich-2FPjlAyMQTA-unsplash.jpg" alt="Estudiants">
+                        <a href="#">
+                            <p class="card__title">Nural Networking course</p>
+                            <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet expedita ullam esse.</p>
+                        </a>
+                    </li>
+                    <li class="cards__item">
+                        <img src="imgs/leon-Oalh2MojUuk-unsplash.jpg" alt="Estudiants">
+                        <a href="#">
+                            <p class="card__title">Nural Networking course</p>
+                            <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet expedita ullam esse.</p>
+                        </a>
+                    </li>
+                  </ul>
+                  
+                  
+            </div>
+        </div>
+    </section>
+
+    <!-- DETAILS ROW -->
+    <section class="flex details" id="courses">
+        <div class="detail about">
+            <h4><span>About</span> Us</h4>
+            <hr class="line">
+            <figure>
+                <img src="imgs/darya-tryfanava-d55fhArDES0-unsplash.jpg" alt="Edifici universitat">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores earum quam aliquam expedita repudiandae. Est quod cupiditate? </p>
+            </figure>
+            <button class="about__button">read more</button>
+        </div>
+        <div class="detail events">
+            <h4><span>Upcoming</span> Events</h4>
+            <hr class="line">
+
+            <article class="flex">
+                <div class="flex article__date">
+                    <p class=" date date__day">28</p>
+                    <hr>
+                    <p class="date date__month">FEB</p>
+                </div>
+
+                <div class="flex article__detail">
+                    <p class="detail__title">Admission Fair Spring 2017</p>
+                    <div class="flex detail__course">
+                        <div class="detail__time">
+                            <p><i class="far fa-clock"></i>5.00 pm - 7.30 pm</p>
+                        </div>
+                        <div class="detail__city">
+                            <p><i class="fas fa-map-marker-alt"></i>Melbourne</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="flex">
+                <div class="flex article__date">
+                    <p class=" date date__day">28</p>
+                    <hr>
+                    <p class="date date__month">FEB</p>
+                </div>
+                
+                <div class="flex article__detail">
+                    <p class="detail__title">Learning Spoken English</p>
+                    <div class="flex detail__course">
+                        <div class="detail__time">
+                            <p><i class="far fa-clock"></i>5.00 pm - 7.30 pm</p>
+                        </div>
+                        <div class="detail__city">
+                            <p><i class="fas fa-map-marker-alt"></i>New york</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="flex">
+                <div class="flex article__date">
+                    <p class=" date date__day">28</p>
+                    <hr>
+                    <p class="date date__month">FEB</p>
+                </div>
+                
+                <div class="flex article__detail">
+                    <p class="detail__title">Workshop Online Marketing</p>
+                    <div class="flex detail__course">
+                        <div class="detail__time">
+                            <p><i class="far fa-clock"></i>5.00 pm - 7.30 pm</p>
+                        </div>
+                        <div class="detail__city">
+                            <p><i class="fas fa-map-marker-alt"></i>USA</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="detail choose">
+            <h4><span>Why Choose</span> Us?</h4>
+            <hr class="line">
+
+            <button class="accordion">Why Imfundo University is Best?</button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, obcaecati cupiditate. Doloribus distinctio sapiente error aspernatur esse magni nemo perspiciatis ab cumque nobis eos et eligendi, tempore cum rem exercitationem.</p>
+            </div>
+
+            <button class="accordion">Why Imfundo University is Best?</button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, obcaecati cupiditate. Doloribus distinctio sapiente error aspernatur esse magni nemo perspiciatis ab cumque nobis eos et eligendi, tempore cum rem exercitationem.</p>
+            </div>
+
+            <button class="accordion">Why Imfundo University is Best?</button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, obcaecati cupiditate. Doloribus distinctio sapiente error aspernatur esse magni nemo perspiciatis ab cumque nobis eos et eligendi, tempore cum rem exercitationem.</p>
+            </div>
+            
+        </div>
+    </section>
     
     <!-- FOOTER -->
-    <footer class="fullwidth">
+    <footer class="fullwidth" id="shortcode">
         <div class="footer flex">
             <div class="footer__item">
                 <i class="fas fa-smile"></i>
