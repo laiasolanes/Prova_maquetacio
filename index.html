@@ -44,7 +44,7 @@
         </div>
         <div class="menu">
             <ul class="flex">
-                <li class="button active dropdown">Home 
+                <a href="#home"><li class="button active dropdown">Home 
                     <i class="fas fa-chevron-down"></i>
                     <div class="dropdown__child">
                         <ul>
@@ -53,19 +53,19 @@
                             <li>Third</li>
                         </ul>
                     </div>
-                </li>
-                <li class="button">Features</li>
-                <li class="button">Pages</li>
-                <li class="button">Courses</li>
-                <li class="button">Blog</li>
-                <li class="button">Shortcode</li>
+                </li></a>
+                <a href="#features"><li class="button">Features</li></a>
+                <a href="#pages"><li class="button">Pages</li></a>
+                <a href="#courses"><li class="button">Courses</li></a>
+                <a href="#blog"><li class="button">Blog</li></a>
+                <a href="#shortcode"><li class="button">Shortcode</li></a>
             </ul>
         </div>
 
     </nav>
     
     <!-- SLIDER -->
-    <section class="fullwidth slider--full">
+    <section class="fullwidth slider--full" id="home">
         <div class="fullwidth slider__layer">
             <div class="slider">
                 <div class="slider__text">
@@ -81,21 +81,21 @@
         </div>
     </section>
 
-    <!-- BOXES -->
-    <section class="flex boxes">
-        <div class="box">
+    <!-- FEATURES -->
+    <section class="flex features" id="features">
+        <div class="feature">
             <img src="imgs/icons8-student-male-64.png" alt="Estudiant">
             <h4>Online Course Facilities</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias distinctio.</p>
         </div>
 
-        <div class="box">
+        <div class="feature">
             <img src="imgs/icons8-book-64.png" alt="Estudiant">
             <h4>Modern Book Library</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias distinctio.</p>
         </div>
 
-        <div class="box">
+        <div class="feature">
             <img src="imgs/icons8-design-64.png" alt="Estudiant">
             <h4>Be Industrial Leader</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias distinctio.</p>
@@ -103,7 +103,7 @@
     </section>
 
     <!-- FORM -->
-    <section class="flex form__row">
+    <section class="flex form__row" id="pages">
         <div class="form__image">
             <img src="imgs/young-people-in-row-with-thumbs-up.jpg" alt="Estudiants aixecant el polze">
         </div>
@@ -175,7 +175,7 @@
     </section>
     
     <!-- FOOTER -->
-    <footer class="fullwidth">
+    <footer class="fullwidth" id="shortcode">
         <div class="footer flex">
             <div class="footer__item">
                 <i class="fas fa-smile"></i>

@@ -106,6 +106,13 @@ h5 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background: var(--white);
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .nav .logo {
@@ -129,46 +136,51 @@ h5 {
   cursor: pointer;
 }
 
-.nav ul li {
+.nav ul a {
+  color: var(--greyText);
+  font-weight: 600;
+}
+
+.nav ul a li {
   padding: 5px 15px;
 }
 
-.nav ul .button:hover {
+.nav ul a .button:hover {
   background: var(--orange);
   color: var(--white);
   -webkit-transition: all 400ms;
   transition: all 400ms;
 }
 
-.nav ul .dropdown {
+.nav ul a .dropdown {
   position: relative;
 }
 
-.nav ul .dropdown .dropdown__child {
+.nav ul a .dropdown .dropdown__child {
   position: absolute;
   z-index: 1;
   top: 30px;
   left: 0px;
   width: 100%;
   background: var(--lightSilver);
-  color: #000000;
+  color: var(--greyText);
   display: none;
 }
 
-.nav ul .dropdown .dropdown__child li {
+.nav ul a .dropdown .dropdown__child li {
   -webkit-transition: all 400ms;
   transition: all 400ms;
 }
 
-.nav ul .dropdown .dropdown__child li:hover {
+.nav ul a .dropdown .dropdown__child li:hover {
   background: var(--white);
 }
 
-.nav ul .dropdown:hover .dropdown__child {
+.nav ul a .dropdown:hover .dropdown__child {
   display: block;
 }
 
-.nav ul .active {
+.nav ul a .active {
   background: var(--orange);
   color: var(--white);
 }
@@ -232,7 +244,7 @@ h5 {
   color: var(--orange);
 }
 
-.boxes {
+.features {
   max-width: 1920px;
   padding: 50px 30px;
   margin: 0 auto;
@@ -241,17 +253,26 @@ h5 {
           justify-content: space-between;
 }
 
-.boxes .box {
+.features .feature {
   width: 30%;
   text-align: center;
   color: var(--greyText);
   background: var(--backgroudSilver);
   border: 1px solid var(--lightSilver);
   padding: 30px;
+  -webkit-transition: 400ms;
+  transition: 400ms;
 }
 
-.boxes .box img {
+.features .feature img {
   margin-bottom: 20px;
+}
+
+.features .feature:hover {
+  -webkit-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 .form__row {

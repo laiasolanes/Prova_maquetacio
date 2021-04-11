@@ -98,6 +98,11 @@ h5{
     padding: 0px 30px;
     margin: 0 auto;
     justify-content: space-between;
+    background: var(--white);
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+    position: sticky;
+    top: 0;
+    z-index: 10;
     
     .logo {
         padding: 10px 0;
@@ -114,46 +119,52 @@ h5{
         justify-content: center;
         cursor: pointer;
 
-        li {
-            padding: 5px 15px;
-           
-        }
-        .button:hover {
-            background: var(--orange);
-            color:var(--white);
-            transition: all 400ms;
-        }
-
-        .dropdown {
-            position: relative;
-            .dropdown__child {
-                position: absolute;
-                z-index: 1;
-                top: 30px;
-                left: 0px;
-                width: 100%;
-                background: var(--lightSilver);
-                color: #000000;
-                display: none;
-                
-                li{
-                    transition: all 400ms;
-                }
-
-                li:hover {
-                    background: var(--white);
-                }
+        a {
+            color: var(--greyText);
+            font-weight: 600;
+            li {
+                padding: 5px 15px;
+               
             }
-            
+            .button:hover {
+                background: var(--orange);
+                color:var(--white);
+                transition: all 400ms;
+            }
+    
+            .dropdown {
+                position: relative;
+                .dropdown__child {
+                    position: absolute;
+                    z-index: 1;
+                    top: 30px;
+                    left: 0px;
+                    width: 100%;
+                    background: var(--lightSilver);
+                    color: var(--greyText);
+                    display: none;
+                    
+                    li{
+                        transition: all 400ms;
+                    }
+    
+                    li:hover {
+                        background: var(--white);
+                    }
+                }
+                
+            }
+    
+            .dropdown:hover .dropdown__child{
+                display: block;
+            }
+            .active {
+                background: var(--orange);
+                color:var(--white);
+            }
         }
 
-        .dropdown:hover .dropdown__child{
-            display: block;
-        }
-        .active {
-            background: var(--orange);
-            color:var(--white);
-        }
+        
     }
 }
 
@@ -213,22 +224,29 @@ h5{
     }
 }
 
-.boxes {
+.features {
     max-width: 1920px;
     padding: 50px 30px;
     margin: 0 auto;
     justify-content: space-between;
 
-    .box{
+    .feature{
         width: 30%;
         text-align: center;
         color: var(--greyText);
         background: var(--backgroudSilver);
         border: 1px solid var(--lightSilver);
         padding: 30px;
+        transition: 400ms;
+        ;
         img {
             margin-bottom: 20px;
         }
+    }
+
+    .feature:hover {
+        box-shadow: 0px 15px 20px rgba(0,0,0,0.2);
+        transform: translateY(-5px)
     }
 }
 
