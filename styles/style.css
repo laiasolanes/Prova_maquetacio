@@ -121,13 +121,7 @@ span {
 }
 
 /* NAV */
-.nav {
-  max-width: 1920px;
-  padding: 0px 30px;
-  margin: 0 auto;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.sticky__nav {
   background: var(--white);
   -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
@@ -137,15 +131,24 @@ span {
   z-index: 10;
 }
 
-.nav .logo {
+.sticky__nav .nav {
+  max-width: 1920px;
+  padding: 0px 30px;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sticky__nav .nav .logo {
   padding: 10px 0;
 }
 
-.nav .logo img {
+.sticky__nav .nav .logo img {
   height: 90%;
 }
 
-.nav ul {
+.sticky__nav .nav ul {
   list-style: none;
   height: 100%;
   padding: 0px;
@@ -158,27 +161,27 @@ span {
   cursor: pointer;
 }
 
-.nav ul a {
+.sticky__nav .nav ul a {
   color: var(--greyText);
   font-weight: 600;
 }
 
-.nav ul a li {
+.sticky__nav .nav ul a li {
   padding: 5px 15px;
 }
 
-.nav ul a .button:hover {
+.sticky__nav .nav ul a .button:hover {
   background: var(--orange);
   color: var(--white);
   -webkit-transition: all 400ms;
   transition: all 400ms;
 }
 
-.nav ul a .dropdown {
+.sticky__nav .nav ul a .dropdown {
   position: relative;
 }
 
-.nav ul a .dropdown .dropdown__child {
+.sticky__nav .nav ul a .dropdown .dropdown__child {
   position: absolute;
   z-index: 1;
   top: 30px;
@@ -189,20 +192,20 @@ span {
   display: none;
 }
 
-.nav ul a .dropdown .dropdown__child li {
+.sticky__nav .nav ul a .dropdown .dropdown__child li {
   -webkit-transition: all 400ms;
   transition: all 400ms;
 }
 
-.nav ul a .dropdown .dropdown__child li:hover {
+.sticky__nav .nav ul a .dropdown .dropdown__child li:hover {
   background: var(--white);
 }
 
-.nav ul a .dropdown:hover .dropdown__child {
+.sticky__nav .nav ul a .dropdown:hover .dropdown__child {
   display: block;
 }
 
-.nav ul a .active {
+.sticky__nav .nav ul a .active {
   background: var(--orange);
   color: var(--white);
 }
@@ -232,6 +235,10 @@ span {
 }
 
 .slider--full .slider .slider__text h5 {
+  color: var(--lightSilver);
+}
+
+.slider--full .slider .slider__text p {
   color: var(--lightSilver);
 }
 
