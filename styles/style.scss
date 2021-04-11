@@ -394,7 +394,7 @@ h5{
                 .detail__title {
                     color: var(--greyText);
                     font-weight: 600;
-                    font-size: 18px;
+                    font-size: 16px;
                 }
                 .detail__course {
                     
@@ -419,6 +419,42 @@ h5{
                 }
             }
         }
+    }
+
+    .choose {
+        .accordion {
+            background-color: var(--backgroudSilver);
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--greyText);
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            text-align: left;
+            border: none;
+            outline: none;
+            transition: 0.4s;
+            
+        }
+        
+        .active, .accordion:hover {
+            background: var(--greyText);
+            color: var(--white);
+        }
+        
+        .panel {
+            margin-left: 20px;
+            padding: 10px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            border-left: dashed;
+            border-width: 1px;
+            border-color: rgb(197, 196, 196);
+            p {
+                padding: 10px 0 0 10px;
+            }
+          }
     }
 }
 

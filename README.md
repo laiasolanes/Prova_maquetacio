@@ -12,4 +12,7 @@
 
 🍭  SASS
 
+🍭  Styles for desktop first and media rules for small devices
+
+
 

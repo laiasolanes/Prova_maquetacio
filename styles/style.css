@@ -436,7 +436,7 @@ h5 {
 .details .events article .article__detail .detail__title {
   color: var(--greyText);
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .details .events article .article__detail .detail__course i {
@@ -454,6 +454,42 @@ h5 {
 
 .details .events article .article__detail .detail__course .detail__city p {
   margin: 0;
+}
+
+.details .choose .accordion {
+  background-color: var(--backgroudSilver);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--greyText);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.details .choose .active, .details .choose .accordion:hover {
+  background: var(--greyText);
+  color: var(--white);
+}
+
+.details .choose .panel {
+  margin-left: 20px;
+  padding: 10px;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+  border-left: dashed;
+  border-width: 1px;
+  border-color: #c5c4c4;
+}
+
+.details .choose .panel p {
+  padding: 10px 0 0 10px;
 }
 
 /* FOOTER */
