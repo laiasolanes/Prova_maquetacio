@@ -12,6 +12,7 @@ body {
     padding: 0px;
     font-size: 14px;
     color: var(--greyText);
+    overflow-x: hidden;
 }
 
 p {
@@ -30,6 +31,12 @@ h1 {
     font-weight: 800;
 }
 
+h3 {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
 h4{
     font-size: 18px;
     font-weight: 600;
@@ -38,6 +45,10 @@ h4{
 
 h5{
     font-size: 14px;
+}
+
+span {
+    color: var(--orange);
 }
 
 .flex {
@@ -284,9 +295,7 @@ h5{
         border: 1px solid var(--lightSilver);
         padding: 30px;
         
-        span {
-            color: var(--orange);
-        }
+        
 
         #inputName {
             margin: 20px 0;
@@ -305,6 +314,90 @@ h5{
     }
 }
 
+/* BLOG */
+.blog--full {
+    background: var(--backgroudSilver);
+    padding: 50px 0;
+
+    .blog {
+        max-width: 1920px;
+        padding: 50px 30px;
+        margin: auto;
+
+        h5 {
+            color: var(--silverText);
+        }
+
+        .blog__title {
+            width: 80%;
+        }
+
+        .blog__arrows {
+            text-align: right;
+            width: 20%;
+
+            .cards__controls {
+                button {
+                    border: none;
+                    background: var(--orange);
+                    color: var(--white);
+                    font-size: 20px;
+                    padding: 5px 20px;
+                    outline: none;
+                    transition: all 400ms;
+                }
+                button:hover {
+                    background: var(--greyText);
+                }
+            }
+        }
+    
+        .blog__slider {
+            margin-top: 30px;
+            .cards__wrapper {
+                  display: flex;
+                  flex-wrap: nowrap;
+            }
+                
+            .cards__item {
+                  flex-grow: 1;
+                  flex-basis: 0;
+                  min-width: 350px;
+                  background: var(--white);
+                  border-radius: 3px;
+                  list-style-type: none;
+                  transition: transform .3s ease-out, box-shadow 400ms;
+                  
+                  &:not(:first-child) {
+                    margin-left: 20px;
+                  }
+
+                  img {
+                      width: 100%;
+                  }
+
+                  .card__title {
+                      padding: 20px 20px 0 20px;
+                      color: var(--greyText);
+                      font-size: 16px;
+                      font-weight: 600;
+                  }
+
+                  .card__text {
+                    padding: 0 20px 20px 20px;
+                    
+                }
+            }
+            .cards__item:hover {
+                box-shadow: 0px 15px 20px rgba(0,0,0,0.2);
+                
+            }
+        }
+    }
+    
+}
+
+
 /* DETAILS ROW */
 .details {
     max-width: 1920px;
@@ -312,10 +405,6 @@ h5{
     margin: 0 auto;
     justify-content: space-between;
     
-    span {
-        color: var(--orange);
-    }
-
     .line {
         width: 40px;
         height: 3px;
