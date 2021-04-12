@@ -1,8 +1,9 @@
 /**
   * @desc Active class to nav buttons
 */
+
 let buttons = document.querySelectorAll('.button');
-console.log(buttons);
+
 buttons.forEach(button => {
     button.addEventListener('click', function() {
         buttons.forEach(btn => btn.classList.remove('active'));
@@ -14,6 +15,7 @@ buttons.forEach(button => {
 /**
   * @desc Accordion buttons in Why Choose us column
 */
+
 let accordion = document.querySelectorAll(".accordion");
 let i;
 
@@ -56,10 +58,7 @@ let slides    = document.querySelectorAll('.cards__item'),
             trans   = 20 + element.clientWidth;
         
         slide.transform = trans * count;
-        
         element.style.transform = 'translateX(-' + slide.transform + 'px)'
-        
-        console.log(slide.transform)
       }
     }
   })
@@ -75,8 +74,7 @@ let slides    = document.querySelectorAll('.cards__item'),
         let element = slides[i],
             trans   = 20 + element.clientWidth;
         
-        slide.transform = trans * count;
-                
+        slide.transform = trans * count;    
         element.style.transform = 'translateX(-' + slide.transform + 'px)'        
       }
     }

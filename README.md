@@ -1,8 +1,12 @@
-# maquetacio_JavaJan
-🍭  Exercici de maquetació per comprovar el nivell
+# Prova tècnica de maquetació
+---
+Exercici de maquetació per comprovar el nivell
 - HTML
 - CSS
 - JS
+
+## Llenguatge i tecnologies utilitzades
+---
 
 🍭  HTML semàntic.
 
@@ -12,7 +16,7 @@
 
 🍭  SASS
 
-🍭  Estils per desktop first i regles específiques per disposituis amb pantalles petites.
+🍭  Estils *desktop first* i regles específiques per dispositius amb pantalles petites.
 
 
 
