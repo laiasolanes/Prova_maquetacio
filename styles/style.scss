@@ -7,6 +7,7 @@
     --orange: #f88147;
     --silverText: #7e7e7e;
     --white: #ffffff;
+    --blue: #1e3344;
 }
 
 body {
@@ -65,7 +66,7 @@ span {
 /* TOPBAR */
 .topbar--full {
     border-top: 2px solid var(--orange);
-    background: #1e3344;
+    background: var(--blue);
 
     .topbar {
         justify-content: space-between;
@@ -197,6 +198,78 @@ span {
             }
         }
     }
+}
+
+/* MOBILE NAV */
+.mobile__nav {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    background: var(--white);
+    .mobile__main{
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        position: relative;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+        i {
+            font-size: 30px;
+        }
+        
+            img {
+                height: 40px;
+            }
+    }
+
+    #dropdown__mobile {
+        box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+        position: absolute;
+        top: 60px;
+        right: 0px;
+        display: none;
+        width: 50%;
+        background: var(--lightSilver);
+        text-align: right;
+              
+        ul {
+            flex-direction: column;
+            cursor: pointer;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            a {
+                color: var(--greyText);
+                li {
+                    padding: 5px 20px 5px 10px;
+                    
+                }
+               .hamburguer__menu {
+                font-size: 1.2em;
+                
+                border-bottom: 1px solid var(--white);
+               }
+                .submenu {
+                    font-size: 0.8em;
+                }
+            } 
+            .hamburguer__menu:hover {
+                background: var(--white);
+            }
+            .submenu:hover {
+                background: var(--orange);
+                color: var(--white)
+            }
+                
+        }
+
+    }
+
+
+    
+
+    
+
 }
 
 /* SLIDER */
@@ -336,6 +409,7 @@ span {
         max-width: 1920px;
         margin: auto;
         padding: 50px 30px;
+        overflow: hidden;
 
         h5 {
             color: var(--silverText);
@@ -368,6 +442,7 @@ span {
 
         .blog__slider {
             margin-top: 30px;
+            
 
             .cards__wrapper {
                 display: flex;
@@ -635,7 +710,7 @@ footer {
     footer {
         .footer {
             max-width: 600px;
-
+            padding: 50px 0 0 0;
             .footer__item {
                 width: 50%;
                 margin-bottom: 50px;
@@ -648,4 +723,34 @@ footer {
     .detail__course {
         flex-direction: column;
     }
+}
+
+@media only screen and (max-width: 550px) {
+    .mobile__nav {
+        display: block;
+    }
+    .hidden__mobile {
+        display: none;
+    }
+    .slider__text {
+        div{
+            flex-direction: column;
+            .button {
+                margin-bottom: 15px;
+            }
+        }
+    }
+    .features {
+        
+        .feature {
+            width: 100%;
+        }
+    }
+    .details {
+
+        .detail {
+            width: 100%;
+        }
+    }
+ 
 }
