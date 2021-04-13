@@ -16,7 +16,7 @@
 </head>
 <body>
     <!-- TOPBAR -->
-    <nav class="fullwidth topbar--full">
+    <nav class="fullwidth topbar--full hidden__mobile">
         <div class="flex topbar">
             <div>
                 <ul class="flex topbar__icons">
@@ -38,7 +38,7 @@
     </nav>
 
     <!-- NAV -->
-    <nav class="sticky__nav">
+    <nav class="sticky__nav hidden__mobile">
         <div class="flex nav">
             <div class="logo">
                 <img src="imgs/Javajan-Logo-20anys.png" />
@@ -75,6 +75,54 @@
             </div>
         </div>
 
+    </nav>
+
+    <!-- MOBILE NAV-->
+    <nav>
+        <div class="flex mobile__nav">
+            <div class="flex mobile__main">
+                <div class="logo">
+                    <img src="imgs/Javajan-Logo-20anys.png" />
+                </div>
+                <div class="hamburguer__menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+
+            <div id="dropdown__mobile">
+               <ul class="flex">
+                    <a href="#home"><li class="hamburguer__menu">
+                        Home 
+                        <i class="fas fa-chevron-down"></i>
+                        <div>
+                            <ul>
+                                <li class="submenu">First</li>
+                                <li class="submenu">Second</li>
+                                <li class="submenu">Third</li>
+                            </ul>
+                        </div>
+                    </li></a>
+                    <a href="#features"><li class="hamburguer__menu">Features</li></a>
+                    <a href="#pages"><li class="hamburguer__menu">
+                        Pages 
+                        <i class="fas fa-chevron-down"></i>
+                        <div>
+                            <ul>
+                                <li class="submenu">First</li>
+                                <li class="submenu">Second</li>
+                                <li class="submenu">Third</li>
+                            </ul>
+                        </div>
+                    </li></a>
+                    <a href="#courses"><li class="hamburguer__menu">Courses</li></a>
+                    <a href="#blog"><li class="hamburguer__menu">Blog</li></a>
+                    <a href="#shortcode"><li class="hamburguer__menu">Shortcode</li></a>
+                    <a href=""><li class="hamburguer__menu">FAQ</li></a>
+                    <a href=""><li class="hamburguer__menu">Help desk</li></a>
+                    <a href=""><li class="hamburguer__menu">Support</li></a>
+                </ul>
+              </div>
+        </div>
     </nav>
     
     <!-- SLIDER -->

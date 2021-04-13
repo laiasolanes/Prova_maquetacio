@@ -11,6 +11,23 @@ buttons.forEach(button => {
     })
 })
 
+/**
+  * @desc Mobile nav
+*/
+let menu = document.querySelectorAll('.hamburguer__menu');
+
+menu.forEach(item => {
+  item.addEventListener('click', function() {
+    let itemMenu = document.querySelector('#dropdown__mobile');
+      if (itemMenu.style.display === "block") {
+        itemMenu.style.display = "none";
+      } else {
+        itemMenu.style.display = "block";
+      }
+  })
+})
+
+
 
 /**
   * @desc Accordion buttons in Why Choose us column
