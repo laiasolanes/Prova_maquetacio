@@ -2,12 +2,12 @@
 
 :root {
     --backgroudSilver: #f9f9f9;
+    --blue: #1e3344;
     --greyText: #575757;
     --lightSilver: #ededed;
     --orange: #f88147;
     --silverText: #7e7e7e;
     --white: #ffffff;
-    --blue: #1e3344;
 }
 
 body {
@@ -202,74 +202,73 @@ span {
 
 /* MOBILE NAV */
 .mobile__nav {
+    position: fixed;
+    z-index: 10;
     display: none;
     flex-direction: column;
-    position: fixed;
     width: 100%;
     background: var(--white);
-    .mobile__main{
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px;
+
+    .mobile__main {
         position: relative;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
         box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+
         i {
             font-size: 30px;
         }
-        
-            img {
-                height: 40px;
-            }
+
+        img {
+            height: 40px;
+        }
     }
 
     #dropdown__mobile {
-        box-shadow: 0 5px 10px rgba(0,0,0,0.2);
         position: absolute;
         top: 60px;
-        right: 0px;
+        right: 0;
         display: none;
         width: 50%;
         background: var(--lightSilver);
+        box-shadow: 0 5px 10px rgba(0,0,0,0.2);
         text-align: right;
-              
+
         ul {
             flex-direction: column;
-            cursor: pointer;
-            list-style: none;
             margin: 0;
             padding: 0;
+            cursor: pointer;
+            list-style: none;
+
             a {
                 color: var(--greyText);
+
                 li {
                     padding: 5px 20px 5px 10px;
-                    
                 }
-               .hamburguer__menu {
-                font-size: 1.2em;
-                
-                border-bottom: 1px solid var(--white);
-               }
+
+                .hamburguer__menu {
+                    border-bottom: 1px solid var(--white);
+                    font-size: 1.2em;
+                }
+
                 .submenu {
                     font-size: 0.8em;
                 }
-            } 
+            }
+
             .hamburguer__menu:hover {
                 background: var(--white);
             }
+
             .submenu:hover {
                 background: var(--orange);
-                color: var(--white)
+                color: var(--white);
             }
-                
         }
-
     }
-
-
-    
-
-    
-
 }
 
 /* SLIDER */
@@ -406,10 +405,10 @@ span {
     background: var(--backgroudSilver);
 
     .blog {
+        overflow: hidden;
         max-width: 1920px;
         margin: auto;
         padding: 50px 30px;
-        overflow: hidden;
 
         h5 {
             color: var(--silverText);
@@ -442,7 +441,6 @@ span {
 
         .blog__slider {
             margin-top: 30px;
-            
 
             .cards__wrapper {
                 display: flex;
@@ -711,6 +709,7 @@ footer {
         .footer {
             max-width: 600px;
             padding: 50px 0 0 0;
+
             .footer__item {
                 width: 50%;
                 margin-bottom: 50px;
@@ -729,28 +728,43 @@ footer {
     .mobile__nav {
         display: block;
     }
+
     .hidden__mobile {
         display: none;
     }
+
     .slider__text {
-        div{
+        div {
             flex-direction: column;
+
             .button {
                 margin-bottom: 15px;
             }
         }
     }
+
     .features {
-        
         .feature {
             width: 100%;
         }
     }
-    .details {
 
+    .details {
         .detail {
             width: 100%;
         }
     }
- 
+
+    .blog--full {
+        .blog{
+            .blog__slider {
+                .cards__item {
+                    .card__text {
+                        padding: 0 100px 20px 20px;
+                    }
+                }
+                
+            }
+        }
+    }
 }

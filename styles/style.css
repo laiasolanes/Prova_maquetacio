@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 :root {
   --backgroudSilver: #f9f9f9;
+  --blue: #1e3344;
   --greyText: #575757;
   --lightSilver: #ededed;
   --orange: #f88147;
   --silverText: #7e7e7e;
   --white: #ffffff;
-  --blue: #1e3344;
 }
 
 body {
@@ -215,25 +215,26 @@ span {
 
 /* MOBILE NAV */
 .mobile__nav {
+  position: fixed;
+  z-index: 10;
   display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: fixed;
   width: 100%;
   background: var(--white);
 }
 
 .mobile__nav .mobile__main {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  position: relative;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 10px;
-  position: relative;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
@@ -247,14 +248,14 @@ span {
 }
 
 .mobile__nav #dropdown__mobile {
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   position: absolute;
   top: 60px;
-  right: 0px;
+  right: 0;
   display: none;
   width: 50%;
   background: var(--lightSilver);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   text-align: right;
 }
 
@@ -263,10 +264,10 @@ span {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  cursor: pointer;
-  list-style: none;
   margin: 0;
   padding: 0;
+  cursor: pointer;
+  list-style: none;
 }
 
 .mobile__nav #dropdown__mobile ul a {
@@ -278,8 +279,8 @@ span {
 }
 
 .mobile__nav #dropdown__mobile ul a .hamburguer__menu {
-  font-size: 1.2em;
   border-bottom: 1px solid var(--white);
+  font-size: 1.2em;
 }
 
 .mobile__nav #dropdown__mobile ul a .submenu {
@@ -443,10 +444,10 @@ span {
 }
 
 .blog--full .blog {
+  overflow: hidden;
   max-width: 1920px;
   margin: auto;
   padding: 50px 30px;
-  overflow: hidden;
 }
 
 .blog--full .blog h5 {
@@ -793,6 +794,9 @@ footer .footer .footer__item i {
   }
   .details .detail {
     width: 100%;
+  }
+  .blog--full .blog .blog__slider .cards__item .card__text {
+    padding: 0 100px 20px 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
