@@ -4,6 +4,7 @@ Exercici de maquetació per comprovar el nivell
 - CSS
 - JS
 
+![Captura de pantalla de l'exercici](https://github.com/laiasolanes/Prova_maquetacio/blob/main/imgs/FireShot-Capture-006---Prova-de-maquetacio.jpg)
 ## Llenguatge i tecnologies utilitzades
 
 🍭  HTML semàntic.
