@@ -3,6 +3,8 @@ Exercici de maquetació per comprovar el nivell
 - HTML
 - CSS
 - JS
+
+![Captura de pantalla de l'exercici](https://github.com/laiasolanes/Prova_maquetacio/blob/main/imgs/FireShot-Capture-006---Prova-de-maquetacio.jpg)
 ## Llenguatge i tecnologies utilitzades
 
 🍭  HTML semàntic.
@@ -26,6 +28,6 @@ Exercici de maquetació per comprovar el nivell
 
 🍭 [Veure exercici publicat](http://laiasolanes.cat/prova_maquetacio/)
 
-![Captura de pantalla de l'exercici](https://github.com/laiasolanes/Prova_maquetacio/blob/main/imgs/FireShot-Capture-006---Prova-de-maquetacio.jpg)
+
 
 
