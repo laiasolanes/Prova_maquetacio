@@ -25,4 +25,6 @@ Exercici de maquetació per comprovar el nivell
 
 🍭 [Fontawesome](https://fontawesome.com/) per totes les icones.
 
+🍭 [Veure exercici](http://laiasolanes.cat/prova_maquetacio/)
+
 
